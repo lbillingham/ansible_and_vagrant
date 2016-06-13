@@ -1,0 +1,12 @@
+---
+- hosts: all
+  remote_user: vagrant
+
+  sudo: yes
+
+  tasks:
+    - name: make sure gvim and git are installed
+      yum: pkg=gvim,git state=present
+    - name: do arbitrary command
+        command: mkdir ~/new_dir
+        command: git clone https://gist.github.com/996adca68bb496b2662eed5158f26676.git
