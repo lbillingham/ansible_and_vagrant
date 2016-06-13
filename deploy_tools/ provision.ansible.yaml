@@ -9,4 +9,4 @@
       yum: pkg=gvim,git state=present
     - name: do arbitrary command
         command: mkdir ~/new_dir
-        command: git clone https://gist.github.com/996adca68bb496b2662eed5158f26676.git
+        command: git clone https://gist.github.com/996adca68bb496b2662eed5158f26676.git ./new_dir
